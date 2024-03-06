@@ -1,0 +1,24 @@
+.wallet{
+    background: var(--green);
+    border-radius: 1rem;
+    padding: 2rem 0rem;
+    text-align: center;
+    color: var(--white);
+}
+.wallet > h3{
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+.wallet .wallet_content{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 0.7rem;
+}
+.wallet .wallet_content p{
+    font-size: 1.2rem;
+}
+.wallet .wallet_content span{
+    font-size: 2rem;
+    font-weight: bold;
+}

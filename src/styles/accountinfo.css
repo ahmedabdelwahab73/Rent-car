@@ -1,0 +1,31 @@
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0rem 3rem;
+}
+.accountinfo input{
+    outline: none;
+    border:  2px solid var(--border-color);
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 2.7rem;
+    font-size: 1rem;
+    padding: 0rem 1rem;
+    color: var(--grey);
+}
+.accountinfo > div{
+    position: relative;
+}
+.accountinfo > div .phone_placeholder--active{
+    position: absolute;
+    top: -0.5rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--border-cl);
+    background: var(--white);
+    transition: all 0.2s ease;
+    color: var(--grey);
+}
+

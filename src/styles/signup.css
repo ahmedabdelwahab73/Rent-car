@@ -1,0 +1,19 @@
+.signuppage .login_box{
+    width: 27rem;
+}
+.signuppage .login_box form{
+    width: 100%;
+    gap: 1.8rem;
+}
+.signuppage .login_box .signup .national input{
+    width: 100%;
+}
+.signuppage .login_box .signup .national {
+    position: relative;
+}
+.signuppage .login_box .signup .national .validate--phone{
+    left: 0.5rem;
+}
+.signuppage .login_box .signup .brithdate input{
+    width: 100%;
+}

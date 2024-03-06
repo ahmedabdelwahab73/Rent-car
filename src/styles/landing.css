@@ -1,0 +1,85 @@
+:root{
+    --cricle-color: rgb(255, 255, 255);
+}
+.landing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 11rem;
+}
+.landing .loading-indicator{
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    z-index: 100;
+}
+.landing .mainslider{
+    position: relative;
+    width: 100%;
+    flex-wrap: nowrap;
+    height: calc(90vh - 50px);
+    overflow: hidden;
+    border-radius: 1.5rem !important;
+}
+.landing .mainslider .swiper-container{
+    height: 100% !important;
+}
+.sliders{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+.landing .mainslider img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+.swiper {
+    height: 100%;
+}
+.landing .mainslider .swiper-button-next,
+.landing .mainslider .swiper-button-prev{
+    display: none!important;
+}
+.swiper-pagination{
+    bottom: 9rem !important;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    background: var(--cricle-color);
+    height: 0.7rem;
+    width: 0.7rem;
+    transition: all 0.3s ease;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet-active{
+    background: var(--green);
+    width: 2rem;
+    border-radius: 1rem;
+}
+/*======== Start Media =======*/
+
+@media (max-width : 1000px) {
+    .popularcars .carts{
+        justify-content: center;
+    }
+    .popularcars .cart{
+        width: calc(96% / 2);
+    }
+}
+@media (max-width : 950px) {
+    .landing .mainslider {
+        /* height: calc(40vh - 50px); */
+    }
+}
+@media (max-width : 768px) {
+    .mainslider{
+        display: none;
+    }
+}
+
+/*======== End Media =======*/

@@ -1,0 +1,65 @@
+:root{
+    --prag-color: rgb(119, 126, 144);
+}
+
+.login_verificationcode .login_box .login_box__text h2{
+    text-align: center;
+}
+.login_verificationcode .login_box .login_box__text .prgh{
+    color: var(--prag-color);
+}
+.login_verificationcode .login_box form input{
+    outline: none;
+    border:  2px solid rgba(133, 133, 133, 0.616);
+    border-radius: 0.5rem;
+    padding: 0.8rem 0.5rem;
+    width: 15rem;
+    font-size: 1.1rem;
+}
+.login_verificationcode .login_box form .inp--active{
+    border: 2px solid var(--green);
+}
+.login_verificationcode .login_box form button{
+    position: relative;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: var(--green);
+    outline: none;
+    border-radius: 1.5rem;
+    border: none;
+    color: var(--white);
+    padding: 0.8rem 0rem;
+    transition: background 0.3s linear;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    z-index: 5;
+}
+.login_verificationcode .login_box form button:hover{
+    background: var(--btn-hover);
+}
+/*========  Start verificationcode Class  ===========*/
+.verificationcode .login_box form {
+    position: relative;
+}
+.verificationcode .login_box{
+    width: 30rem;
+}
+.verificationcode .login_box form{
+    width: 100%;
+}
+.verificationcode .login_box form input{
+    width: 100%;
+}
+.code {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.verificationcode .login_box form .validate--phone{
+    top: 3.8rem;
+    left: 1rem;
+}
+.a{
+    font-size: 2rem;
+    color: red;
+}
+/*========  End verificationcode Class  ===========*/

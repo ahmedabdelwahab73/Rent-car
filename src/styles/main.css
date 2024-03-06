@@ -1,0 +1,1962 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@1,700&family=Open+Sans:ital,wght@0,400;0,600;0,800;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@800&family=Assistant:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-bg: #fbfbff;
+    --black: rgb(47, 53, 59);
+    --blue: #8f1ae8;
+    --white: #fff;
+    --ofwhite: #fafbfc;
+    --grey : rgb(119, 126, 144);
+    --hover : rgba(0, 0, 0, 0.04);
+    --box-sh: #0000005e;
+    --green : rgb(21, 170, 190);
+    --border-cl: rgb(119, 126, 144);
+    --inp-hover: rgba(0, 0, 0, 0.04);
+    --btn-hover: rgb(18, 154, 170);
+    --border-c8: rgba(119 126 144 / 14%);
+    --green-white : #e8fffe;
+    --of-white: #fafbfc;
+    --border-color : rgba(0, 0, 0, 0.12);
+    --open-green :rgba(21, 170, 190, 0.04);
+}
+body{
+    font-family: "Hanimation Arabic", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    background: var(--main-bg);
+    scroll-behavior: smooth;
+}
+.po-f{
+    overflow: hidden;
+    padding-right: 0.5rem;
+}
+::-webkit-scrollbar{
+    background: #fbfbff;
+    width: 0.5rem;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--green);
+    box-shadow: 0px 0px 10px 20px var(--green);
+}
+.bg-yallow{
+    color: gold;
+}
+.bg-black{
+    color: black;
+}
+.container{
+    padding: 1rem 8rem;
+    position: relative;
+}
+.formatform{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 6rem);
+    box-shadow: 0px 0px 5px 1px rgb(212, 206, 206);
+}
+.formatform > img{
+    width: 60%;
+    height: 100%;
+}
+.formatform form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 4rem;
+    align-items: center;
+    width: 28rem;
+    height: 100%;
+    padding: 3rem 2rem;
+    background: white;
+}
+.formatform form div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap : 1rem;
+    border-bottom: 0.1rem solid #ccc;
+    position: relative;
+}
+.formatform form div label{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #5f5b5b;
+}
+.formatform form div input{
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.formatform form div input::placeholder{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ccc;
+}
+.formatform form button{
+    border: none;
+    outline: none;
+    padding: 1rem 3rem;
+    background: #0F2167;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.validate{
+    color: red;
+    position: absolute;
+    bottom: -2rem;
+}
+.unvalidate{
+    display: none;
+}
+
+/*=========  Start Profile  =========*/
+.profile{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
+    rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+    padding: 4rem 3rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+}
+.profile > h2{
+    font-weight: normal;
+    font-size: 1.7rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+.profile .profile_content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1rem 0rem;
+    gap: 1.5rem;
+}
+.profile .profile_content aside{
+    width: 13rem;
+    border-right: 2px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+.profile .profile_content aside button{
+    text-align: start;
+    color: var(--grey);
+    outline: none;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.9rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+    width: 100%;
+}
+.profile .profile_content aside button:hover{
+    background: var(--open-green);
+}
+.profile .profile_content aside .btn--active{
+    color: var(--green);
+    position: relative;
+}
+.profile .profile_content aside .profile_content__btn{
+    position: relative;
+    width: 100%;
+}
+.profile .profile_content aside .profile_content__btn .br-left--active{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--green);
+    height: 90%;
+    width: 0.3rem;
+}
+.profile .profile_content section{
+    width: 80%;
+}
+
+/*=========  End Profile  =========*/
+/*=========  Start PopularCars  =========*/
+
+.popularcars{
+    gap: 5rem;
+}
+.popularcars .popularcars_text{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.popularcars .popularcars_text div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.popularcars .popularcars_text div h2{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    font-family: 'Assistant', sans-serif;
+    color: var(--black);
+}
+.popularcars .popularcars_text div p{
+    color: var(--grey);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.popularcars .popularcars_text .popularcars_icon{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+.popularcars .popularcars_text .popularcars_icon svg{
+    cursor: pointer;
+    color: var(--grey);
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+.popularcars .popularcars_text .popularcars_icon .active{
+    box-shadow: 0px 0px 0px 1px rgb(119 126 144 / 30%);
+}
+.popularcars .popularcars_text .popularcars_icon .disable{
+    border: none;
+}
+.carts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 1.5rem 1.5rem 4rem;
+
+}
+.popularcars .cart{
+    width: calc(96% / 3);
+}
+
+.cart .cart_head{
+    position: absolute;
+    top: 0rem;
+    left: 5rem;
+    transform: translateX(-50%);
+    background: #763f98;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-bottom-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    font-weight: bolder;
+    font-size: 0.8rem;
+}
+.cart .tardemark{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart .tardemark > span{
+    color: var(--green);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Assistant', sans-serif;
+}
+.cart .tardemark .trade_img{
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.cart .tardemark .trade_img img{
+    width: 3rem;
+}
+.cart .cart_title{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.cart .cart_title h2{
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.5rem;
+}
+.cart .cart_title span{
+    color: var(--grey);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.cart > img{
+    width: 100%;
+    height: 100%;
+}
+.cart .cart_kilo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.cart .cart_kilo > div{
+    background: var(--green-white);
+    border-radius: 0.5rem;
+    width: calc(97% / 2);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+.cart .cart_kilo > div .cart_kilo__text{
+    color: var(--green);
+    font-weight: bolder;
+    font-family: 'Assistant', sans-serif;
+}
+.cart .cart_kilo > div .cart_kilo__free{
+    font-size: 0.7rem;
+}
+.cart .cart_kilo > div svg{
+    color: var(--green);
+    width: 1.5rem;
+}
+.popularcars .css-zddlty-MuiButtonBase-root-MuiButton-root{
+    cursor: pointer;
+    position: absolute !important;
+    bottom: 0;
+    background: var(--green);
+    width: 100%;
+    left: 0;
+    border-radius: 0rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 0.8rem 0rem;
+}
+.popularcars .css-zddlty-MuiButtonBase-root-MuiButton-root:hover{
+    background: var(--btn-hover);
+}
+
+@media (max-width : 1200px) {
+    .popularcars .carts{
+        row-gap: 1.3rem;
+    }
+}
+
+@media (max-width : 850px) {
+    .popularcars .carts{
+        justify-content: center;
+    }
+}
+@media (max-width : 768px) {
+    .popularcars{
+        display: none;
+    }
+}
+/*=========  End PopularCars  =========*/
+/*=========  Start Airport   =========*/
+.airportfilter_head{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 2.5rem;
+}
+.airportfilter_head .airportfilter_head__icon{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.airportfilter_head .airportfilter_head__icon svg{
+    color: var(--green);
+    width: 1.7rem;
+    height: 1.7rem;
+}
+.airportfilter_head .airportfilter_head__icon span{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.airportfilter_head .airportfilter_head__filter{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.airportfilter_head .airportfilter_head__filter > p{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.airportfilter_head .airportfilter_head__filter .airportfilter_head_inp .MuiFormControl-root{
+    margin: 0;
+}
+.airportfilter_head .airportfilter_head__filter .airportfilter_head_inp .MuiFormControl-root .MuiSelect-select{
+    padding: 0.6rem 2rem 0.6rem 0.6rem;
+}
+.aiport{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 3rem;
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+.aiport_menu{
+    width: 20rem;
+    box-shadow: rgba(15, 15, 15, 0.2) 0px 8px 16px -8px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 1.5rem;
+    height: fit-content;
+    padding: 2rem ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 0.3s ease;
+}
+.aiport .showlistfilter{
+    left: -50%;
+}
+.aiport_menu .aiport_menu__content{
+    display: flex;
+    flex-direction: column;
+}
+.aiport_menu .aiport_menu__content > div{
+    padding-top: 2rem;
+}
+.aiport_menu .aiport_menu__content > div:not(:last-child){
+    border-bottom: 1px solid var(--border-c8);
+    padding-bottom: 2rem;
+}
+.aiport .aiport_menu .aiport_menu__head{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.aiport .aiport_menu .aiport_menu__head p{
+    color: var(--green);
+    cursor: pointer;
+}
+.airportfilter{
+    padding-left: 22rem;
+    width: 100%;
+}
+.airportfilter--active{
+    padding-left: 0rem;
+}
+.airportfilter_content {
+    width: 100%;
+}
+.airportfilter_content__mainslider{
+    width: 100%;
+}
+.airportfilter_content__mainslider > h1{
+    padding-top: 20rem;
+}
+.airport_maincart{
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.airport_maincart .cart{
+    padding-bottom: 0;
+    border-radius: 0;
+    border: 0px;
+}
+.airport_maincart .airport_maincart__rent{
+    background: var(--green) !important;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding: 0.7rem 0rem;
+}
+.airport_maincart .airport_cart__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.airport_maincart .airport_cart__image img{
+    width: 80%;
+    height: 12rem;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    width: 2rem !important;
+    height: 2rem !important;
+    color: var(--white) !important;
+}
+.airport_indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
+}
+
+
+/*=========== $$$$$$$$$$$$$ Start airport_menu $$$$$$$$$$$$$$ ==========*/
+::-webkit-scrollbar{
+    background: #fbfbff;
+    width: 0.5rem;
+    border-bottom-right-radius: 1.3rem;
+    border-top-right-radius: 1.3rem;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--green);
+    box-shadow: 0px 0px 10px 20px var(--green);
+}
+.main_airport_menu{
+    position: relative;
+}
+.airport_menu{
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    width: 33rem;
+    min-height: 32rem;
+    padding: 2rem;
+    gap: 1.5rem;
+    background: #fafbfc;
+    border-bottom-left-radius: 1.3rem;
+    border-top-left-radius: 1.3rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.airport_menu > svg {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    background: var(--white);
+    padding: 0.8rem;
+    border-radius: 50%;
+    box-shadow: rgba(15, 15, 15, 0.2) 0px 8px 16px -8px;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--grey);
+    z-index: 1000;
+}
+.airport_menu .airport_menu__icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 3rem;
+    align-items: center;
+    padding: 1.5rem 0rem;
+    border-bottom: 2px solid var(--border-color);
+}
+.airport_menu .airport_menu__icon > svg{
+    cursor: pointer;
+}
+
+.airport_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 20vh;
+}
+.airport_content button{
+    outline: none;
+    border: none;
+    background: var(--white);
+    color: var(--black);
+    padding: 0.5rem 1rem;
+    justify-content: start;
+    gap: 2rem;
+}
+.airport_content button:hover{
+    border: none;
+    background-color: rgb(232, 255, 254)
+}
+.airport_content button .airport_content__icon{
+    width: 2rem;
+    height: 2rem;
+    background: rgb(21 170 190 / 14%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.airport_content button svg{
+    color: var(--green);
+}
+.airport_content button .text{
+    text-align: start;
+}
+.airport_content button .text p{
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.airport_content button .text span{
+    font-size: 0.7rem;
+    color: var(--grey);
+}
+.airportfilter_content__mainslider .carts{
+    flex-wrap: nowrap;
+    position: relative;
+    max-width: 100%;
+    padding-bottom: 2rem;
+}
+.airportfilter_content__mainslider .carts > svg{
+    position: absolute;
+    z-index: 100;
+    font-size: 5rem;
+    top: 10%;
+    cursor: pointer;
+}
+.airportfilter_content__mainslider .carts .po-l{
+    right: 0;
+}
+.swiper-button-prev,.swiper-button-next{
+    color: white;
+    background: var(--green);
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+}
+.swiper-button-prev{
+    right: 10rem !important;
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 0.7rem !important;
+}
+
+/*=========== $$$$$$$$$$$$$ Start airport_menu $$$$$$$$$$$$$$ ==========*/
+/*===========  Start airport_media  ==========*/
+.airport_filtertion{
+    display: flex;
+    flex-wrap: nowrap;
+    background: var(--white);
+    padding: 0rem 4rem;
+    height: 4rem;
+    box-shadow: rgba(24, 39, 75, 0.06) 0px 8px 14px -4px;
+    position: absolute;
+    top: -2rem;
+    width: 90%;
+    left: 5%;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.airport_filtertion .airport_filtertion__filter,
+.airport_filtertion .airport_filtertion__sort{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.7rem;
+}
+.airport_filtertion .airport_filtertion__filter svg,
+.airport_filtertion .airport_filtertion__sort svg{
+    color: var(--green);
+    font-size: 1.2rem;
+}
+.airport_filtertion .airport_filtertion__filter span,
+.airport_filtertion .airport_filtertion__sort span{
+    color: var(--grey);
+    font-size: 1.2rem;
+}
+.airport_filtertion .airport_filtertion__line{
+    width: 0.1rem;
+    height: 1.8rem;
+    background: rgb(119 126 144 / 28%);
+}
+.airport_media{
+    background: var(--of-white);
+    padding: 4rem 0rem 10rem;
+}
+.airport_media .swiper-button-prev,
+.airport_media .swiper-button-next{
+    top: 4rem !important;
+    background: rgb(231 227 227);
+    color: #000 !important;
+    width: 1.7rem !important;
+    height: 1.7rem !important;
+    font-weight: bolder !important;
+}
+.airport_media .swiper-button-prev{
+    right: 12rem !important;
+    left: auto !important;
+}
+.airport_media .swiper-button-next{
+    right: 8rem !important;
+    left: auto !important;
+}
+.airport_media .swiper-button-prev.swiper-button-disabled{
+    opacity: 1rem !important;
+}
+.airport_media .swiper-button-prev.swiper-button-disabled{
+    opacity: 1rem !important;
+}
+.airport_media .airport_maincart{
+    background: transparent;
+    border: none;
+    border-radius: 0%;
+}
+.airport_media .airport_maincart .cart{
+    padding-left: 0rem;
+    padding-right: 1rem;
+}
+.airport_media .airport_maincart .airport_cart .tardemark{
+    width: 4rem;
+}
+.airport_media .airport_maincart .airport_cart .tardemark .trade_img{
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: center;
+}
+.airport_media .airport_maincart .airport_cart .tardemark .trade_img img{
+    width: 100%;
+    height: 2rem;
+}
+.airport_media .airport_maincart .airport_cart .tardemark .trade_img .cart_stars {
+    font-size: 0.8rem;
+}
+.airport_media .airport_maincart .airport_cart .tardemark .trade_img .cart_stars svg{
+    height: 0.8rem;
+    padding-right: 0.5rem;
+}
+.airport_media .airport_cart__content{
+    background: var(--white);
+    box-shadow: rgba(30, 46, 62, 0.04) 0px 4px 8px 0px;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+.airport_media .airport_maincart .cart{
+    background: transparent !important;
+}
+.airport_media .airport_cart__content .airport_cart__image{
+    display: flex;
+    justify-content: space-between;
+}
+.airport_media .airport_cart__content .airport_cart__image .airport_cart__image--img{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.airport_media .swiper-pagination {
+    bottom: 0 !important;
+    display: none;
+}
+@media (max-width : 768px) {
+    .airport_media {
+        padding: 1.5rem 0rem 10rem;
+    }
+    .airport_media .airport_cart__content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .airport_media .airport_cart__content .airport_cart__image{
+        max-width: 90%;
+        padding-top: 2rem;
+    }
+    .airport_media .airport_cart__content .airport_cart__image .airport_cart_info{
+        color: var(--grey);
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .airport_media .airport_cart__content .airport_cart__image .airport_cart__image--img{
+        /* width: auto; */
+        width: 35%;
+    }
+    .airport_media .airport_cart__content .airport_cart__image .airport_cart__image--img img{
+        max-width: auto !important;
+        height: auto !important;
+    }
+    .cart .cart_title h2{
+        font-size: 1rem;
+        color: var(--black);
+    }
+    .cart .cart_title .cart_notis{
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+        font-size: 0.7rem;
+        background: #fdf6d9;
+        padding: 1rem;
+        color: rgb(186, 136, 48);
+        border-bottom-left-radius: 2rem;
+        border-top-right-radius: 1rem;
+    }
+    .airport_media .airport_cart__content .cart_price{
+        color: var(--green);
+        font-weight: bolder;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: end;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    .airport_media .airport_cart__content .cart_price span{
+        padding-left: 0.3rem;
+        font-weight: normal;
+        font-size: 0.6rem;
+    }
+}
+@media (max-width: 500px) {
+    .airport_filtertion {
+        padding: 0rem;
+    }
+    .airport_media .swiper-button-next {
+        right: 5rem !important;
+    }
+    .airport_media .swiper-button-prev {
+        right: 8.5rem !important;
+    }
+    .airport_media .airport_cart__content .airport_cart__image .airport_cart__image--img img{
+        width: 100%;
+    }
+}
+/*===========  Start airport_media PopUp  ==========*/
+.filterpopup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.filterpopup .filterpopup_head{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: var(--green);
+    padding: 1.3rem;
+}
+.filterpopup .filterpopup_head > svg{
+    font-size: 1.5rem;
+}
+.filterpopup .filterpopup_head .filterpopup_head__icon{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    align-items: end;
+}
+.filterpopup .filterpopup_head .filterpopup_head__icon svg{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+.filterpopup .filterpopup_head .filterpopup_head__icon span{
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.filterpopup .filterpopup_content{
+    padding: 0rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.pa-l{
+    padding: 0rem 1.3rem 0rem 0.3rem !important;
+}
+/*===========  End airport_media PopUp  ==========*/
+/*===========  Start airport_media Booking Car ==========*/
+.booking{
+    padding: 0rem !important;
+    gap: 4rem;
+}
+.booking .booking_top{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.booking .booking_top .booking_top__head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.booking .booking_top .booking_top__head > button{
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    border: 1px solid rgb(230, 232, 236);
+    border-radius: 1.5rem;
+    color: var(--black);
+    font-size: 0.7rem;
+    font-weight: bold;
+    box-shadow: none;
+    padding: 0.7rem 1rem ;
+}
+.booking .booking_top .booking_top__head > button svg{
+    font-size: 0.5rem;
+}
+.booking .booking_top .booking_top__head > button:hover{
+    background: #e8fffe4f;
+    border: 1px solid var(--green);
+}
+.booking .booking_top .booking_top__head p{
+    font-weight: bold;
+    color: var(--grey);
+}
+.booking .booking_top .booking_top__information{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.booking .booking_top .booking_top__information .information_title{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.booking .booking_top .booking_top__information .information_title h1{
+    color: var(--black);
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.1rem;
+}
+.booking .information_content{
+    display: flex;
+    gap: 2rem;
+}
+.booking .information_content p{
+    display: flex;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    align-items: end;
+    font-weight: bold;
+    color: var(--black);
+}
+.booking .information_content p svg{
+    color: var(--green);
+    font-size: 1.3rem;
+}
+.booking .booking_top .booking_top__information .information_price{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.booking .booking_top .booking_top__information .information_price p{
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding-right: 1.5rem;
+    border-right: 1.5px solid var(--grey);
+}
+.booking .booking_top .booking_top__information .information_price button{
+    margin-left: 1.5rem;
+    background: #15aabe;
+    border-radius: 2rem;
+    color: var(white);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    border-radius: 1.5rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.7rem 1rem;
+    text-transform: capitalize;
+}
+.booking .booking_top .booking_top__content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.booking .booking_top .booking_top__content > img{
+    max-width: 25rem;
+}
+.booking .booking_top .booking_top__content .content_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    border: 1px solid rgb(230, 232, 236);
+    border-radius: 0.5rem;
+    width: 15rem;
+    padding: 1.5rem 0rem;
+}
+.booking .booking_top .booking_top__content .content_text .content_stars{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.booking .booking_top .booking_top__content .content_text p{
+    color: var(--green);
+    font-size: 0.6rem;
+    font-weight: bold;
+    background: #d8efee8a;
+    padding: 0.5rem 1rem;
+}
+.booking .booking_top .booking_top__content .content_text img{
+    max-width: 4rem;
+}
+.booking > span{
+    display: block;
+    width: 97%;
+    margin: 0px auto;
+    background: var(--border-color);
+    height: 1px;
+}
+.booking .booking_bottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.booking .booking_bottom .booking_bottom__carDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: calc(100% - 25rem);
+}
+.booking .booking_bottom .booking_bottom__carDetails .available_services{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.booking .booking_bottom .booking_bottom__carDetails .services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+.booking .booking_bottom .booking_bottom__carDetails .services svg{
+    color: var(--green);
+    background: rgb(21 170 190 / 13%);
+    padding: 0.8rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+.booking .booking_bottom .booking_bottom__carDetails .services p{
+    color: var(--grey);
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+.booking .booking_bottom aside{
+    width: 25rem;
+    border: 1px solid var(--border-color);
+    min-height: 50vh;
+    border-radius: 1.3rem;
+    padding: 2.3rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+.booking .booking_bottom aside h2{
+    color: var(--black);
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 2.3rem;
+}
+.aside_promoCode{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.3rem 0rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.aside_promoCode .promoCode_label{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    align-items: center;
+}
+.aside_promoCode .promoCode_label p{
+    color: var(--grey);
+    font-size: 0.8rem;
+}
+.aside_promoCode .promoCode_acourding--active{
+    display: none;
+}
+.aside_priceDetails{
+    padding: 2.3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.aside_priceDetails h2{
+    border: none;
+    padding: 0px;
+}
+.aside_priceDetails .priceDetails_content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 0.7rem;
+    gap: 1.5rem;
+}
+.aside_priceDetails .priceDetails_content div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.aside_priceDetails .priceDetails_content div p{
+    color: var(--black);
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.aside_priceDetails .priceDetails_content div .content_number{
+    color: var(--grey);
+    font-weight: normal;
+}
+.aside_priceDetails .priceDetails_content .content_total{
+    background: rgb(21 170 190 / 8%);
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.3rem;
+}
+.aside_priceDetails .priceDetails_content .content_total p{
+    color: var(--green);
+}
+.booking .booking_bottom aside > button{
+    width: fit-content;
+    margin: 0px auto;
+    background: #15aabe;
+    border-radius: 2rem;
+    gap: 0.5rem;
+    border-radius: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.7rem 1.5rem;
+    text-transform: capitalize;
+}
+@media (max-width: 1024px) {
+    .booking .booking_bottom{
+        width: 100%;
+    }
+}
+/*===========  End airport_media Booking Car  ==========*/
+/*===========  Start airport_media Booking Car Media  ==========*/
+.bookingmedia > svg{
+    position: absolute;
+    top: -7rem;
+    left: 2rem;
+    color: var(--white);
+}
+.bookingmedia .bookingmedia_image{
+    position: absolute;
+    top: -6.5rem;
+    width: 19.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width : 600px) {
+    .bookingmedia .bookingmedia_image {
+        top: -5.5rem;
+        width: 18rem;
+    }
+}
+.bookingmedia .bookingmedia_image img{
+    width: 100%;
+}
+.bookingmedia .bookingmedia_content{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car{
+    display: flex;
+    flex-direction: column;
+    gap : 2rem;
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car .car_head{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car .car_head h1{
+    font-size: 1.4rem;
+    color: var(--black);
+    font-family: "Boogaloo", sans-serif;
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car .car_head p{
+    font-size: 1.4rem;
+    color: var(--green);
+    font-family: "Boogaloo", sans-serif;
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car .car_head p span{
+    font-size: 0.9rem;
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car .car_prand{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+    align-items: end;
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car .car_prand img{
+    width: 3rem;
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car .car_prand p{
+    color: var(--black);
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car .car_prand .car_prand_stars{
+    display: flex;
+    gap : 0.4rem;
+    color: var(--grey);
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car .car_prand .car_prand_stars svg{
+    color: rgb(217, 166, 66);
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car .car_kilo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    align-items: end;
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car .car_kilo svg{
+    color: var(--green);
+    font-size: 1.4rem;
+}
+.bookingmedia .bookingmedia_content .bookingmedia_content__car .car_kilo p{
+    color: var(--grey);
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.bookingmedia .bookingmedia_content .content_telgani{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    background: #f1ebf4;
+    border-radius: 1rem;
+    padding: 1rem 0rem 1rem 2rem;
+}
+.bookingmedia .bookingmedia_content .content_telgani .content_telgani__text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.bookingmedia .bookingmedia_content .content_telgani .content_telgani__text span{
+    color: rgb(118, 63, 152);
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+.bookingmedia .bookingmedia_content .content_telgani .content_telgani__text p{
+    color: var(--black);
+    font-size: 0.7rem;
+    font-weight: bolder;
+}
+.bookingmedia .bookingmedia_content .content_telgani .content_telgani__btn{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+.bookingmedia .bookingmedia_content .content_telgani .content_telgani__btn button{
+    width: fit-content;
+    border: none;
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    color: var(--grey);
+    padding: 0rem;
+    font-weight: bolder;
+}
+.bookingmedia .bookingmedia_content .content_telgani .content_telgani__btn svg{
+    font-size: 0.7rem;
+    color: var(--grey);
+}
+.content_telgani__popup .popup_text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.content_telgani__popup .popup_text span{
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: rgb(118, 63, 152);
+}
+.content_telgani__popup .popup_text p{
+    font-size: 0.8rem;
+    color: var(--black);
+}
+.bookingmedia_content .content_filter{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.bookingmedia_content .content_filter > h2{
+    font-size: 1.1rem;
+    color: var(--black);
+}
+.bookingmedia_content .content_filter .filter_insurance{
+    display: flex;
+    gap: 1rem;
+    border: 1px solid rgb(240, 240, 240);
+    padding: 1.8rem 1rem;
+    border-radius: 1rem;
+}
+.bookingmedia_content .content_filter .filter_insurance .filter_insurance_text{
+    display: flex;
+    flex-direction: column;
+    gap:  0.5rem;
+}
+.bookingmedia_content .content_filter .filter_insurance .filter_insurance_text span{
+    font-weight: bolder;
+    font-size: 0.9rem;
+}
+.bookingmedia_content .content_filter .filter_insurance .filter_insurance_text p{
+    font-size: 0.8rem;
+    color: var(--grey);
+}
+.bookingmedia_content .bookingmedia_content__promo{
+    border-bottom: none;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 1rem;
+    padding: 1.8rem 1rem;
+}
+
+/*===========  End airport_media Booking Car Media  ==========*/
+/*===========  End airport_media  ==========*/
+/*===========  Start AppRent  ==========*/
+.apprent{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding-bottom: 3rem;
+}
+.apprent .apprent_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30rem;
+    
+}
+.apprent .apprent_content h2{
+    font-size: 2.5rem;
+}
+.apprent .apprent_content p{
+    font-size: 0.9rem;
+    color: var(--grey);
+}
+.apprent .apprent_content .apprent_content__li{
+    line-height: 2rem;
+}
+.apprent .apprent_content label{
+    position: relative;
+    width: 70%;
+}
+.apprent .apprent_content label svg{
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--green);
+    border-radius: 50%;
+    padding: 0.7rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+    color: var(--white);
+}
+.apprent .apprent_content label input{
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--grey);
+    height: 4rem;
+    border-radius: 0.5rem;
+    padding-left: 0.6rem;
+    color: var(--black);
+    font-size: 1rem;
+}
+.apprent .apprent_content label input:focus{
+    border-color: var(--green);
+}
+.apprent .apprent_content label input::placeholder{
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--grey);
+}
+.apprent .apprent_images{
+    max-width: calc(100% - 30rem);
+}
+.apprent .apprent_images img{
+    width: 100%;
+}
+@media (max-width: 1000px) {
+    .apprent{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 2rem;
+    }
+    .apprent .apprent_content{
+        width: 65%;
+    }
+    .apprent .apprent_content label{
+        width: 100%;
+    }
+    .apprent .apprent_images{
+        max-width: 100%;
+    }
+    .apprent .apprent_content p{
+        /* align-self: start; */
+    }
+}
+@media (max-width: 768px) {
+    .apprent{
+        display: none;
+    }
+}
+/*===========  End AppRent  ==========*/
+/*===========  Start SliderLocation  ==========*/
+.sliderlocation{
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.sliderlocation .sliderlocation_text{
+    display: flex;
+    flex-direction: column;
+    gap:  1rem;
+}
+.sliderlocation .sliderlocation_text h2{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    font-family: 'Assistant', sans-serif;
+    color: var(--black);
+}
+.sliderlocation .sliderlocation_text p{
+    color: var(--grey);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.sliderlocation .sliderlocation_slider{
+    height: 100%;
+}
+.sliderlocation .sliderlocation_slider .swiper-pagination{
+    bottom: 0 !important;
+}
+.sliderlocation .sliderlocation_slider .swiper-wrapper{
+    height: 100% !important;
+}
+.sliderlocation .sliderlocation_slider .swiper-slide{
+    height: 33vh !important;
+} 
+.sliderlocation .swiper-wrapper{
+    height: 100% !important;
+}
+.sliderlocation .sliderlocation_cart{
+    border-radius: 0.5rem;
+    height: 17vh !important;
+}
+.sliderlocation_slider .swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--grey) !important;
+    width: 0.6rem;
+    height: 0.6rem;
+}
+.sliderlocation_slider .swiper-pagination-clickable .swiper-pagination-bullet-active{
+    background: var(--green) !important;
+}
+.sliderlocation .sliderlocation_cart img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.sliderlocation .sliderlocation_cart .cart_content{
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 6.90162px 12.254px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.sliderlocation .sliderlocation_cart .cart_content{
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.sliderlocation .sliderlocation_cart .cart_content button{
+    background: var(--green);
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    padding: 0.5rem 0.7rem;
+}
+/*===========  End SliderLocation  ==========*/
+/*=========== $$$$$$$$$$ Start dailyrent_menu $$$$$$$$$$$$ ==========*/
+.banner_dailyrent{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 20rem;
+    z-index: 111000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner_dailyrent .banner_dailyrent__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0000004d;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.dailyrent_menu{
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem;
+    position: relative;
+    gap: 1.5rem;
+    background: #fafbfc;
+    border-radius: 1.3rem;
+}
+.dailyrent_menu > svg{
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    background: var(--white);
+    padding: 0.8rem;
+    border-radius: 50%;
+    box-shadow: rgba(15, 15, 15, 0.2) 0px 8px 16px -8px;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--grey);
+}
+.dailyrent_menu .dailyrent_menu__icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 3rem;
+    align-items: center;
+    padding: 1.5rem 0rem;
+    border-bottom: 2px solid var(--border-color);
+}
+.dailyrent_menu .dailyrent_menu__icon svg{
+    color: var(--green);
+    border: 2px solid var(--border-color);
+    padding: 0.6rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dailyrent_menu .dailyrent_menu__boxs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+}
+.dailyrent_menu .dailyrent_menu__boxs .dailyrent_menu__box{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: rgba(24, 39, 75, 0.04) 0px 6px 14px -6px;
+    background: var(--white);
+    border-radius: 1rem;
+    width: 50%;
+}
+.dailyrent_menu .dailyrent_menu__boxs .dailyrent_menu__box img{
+    width: 5rem;
+}
+.dailyrent_menu .dailyrent_menu__boxs .dailyrent_menu__box .menu_box__text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.dailyrent_menu .dailyrent_menu__boxs .dailyrent_menu__box .menu_box__text p{
+    font-weight: bolder;
+}
+.dailyrent_menu .dailyrent_menu__boxs .dailyrent_menu__box .menu_box__text span{
+    display: block;
+    color: var(--grey);
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
+.map{
+    position: relative;
+}
+.map .map_btn{
+    position: absolute;
+    width: 10rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: var(--green);
+    outline: none;
+    border-radius: 1.5rem;
+    border: none;
+    color: var(--white);
+    padding: 0.6rem 0rem;
+    transition: background 0.3s linear;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    z-index: 1000;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.leaflet-marker-icon {
+    transition: transform 0.3s ease-in-out;
+}
+.your-map-class{
+    height: 100% !important;
+}
+.leaflet-container{
+    width: 100vh !important;
+    height: 60vh !important;
+}
+.marker-enter {
+    transform: translate3d(0, 0, 0) !important;
+    transition: transform 1s ease-in-out; 
+}
+
+/*=========== $$$$$$$$$ End dailyrent_menu $$$$$$$$$$$$ ==========*/
+/*=========== $$$$$$$$$ Start loading $$$$$$$$$$$$ ==========*/
+.loading{
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loadingscale 1s ease infinite;
+}
+.loading img{
+    width: 15rem;
+}
+@keyframes loadingscale {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+/*=========== $$$$$$$$$ End loading $$$$$$$$$$$$ ==========*/
+.errorhome{
+    background: rgb(255, 43, 43);
+    padding: 1rem;
+    color: var(--white);
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+.errorhome svg{
+    color: var(--white);
+    font-size: 1rem;
+}
+/*=========== $$$$$$$$$$$$$ Start Footer   $$$$$$$$$$$$$$ ==========*/
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 8rem;
+}
+footer .footer_top{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+footer .footer_top .footer_top__icon{
+    width: 1.5rem;
+}
+footer .footer_top .footer_top__icon img{
+    width: 100%;
+}
+footer .footer_top .footer_top__links{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+footer .footer_top .footer_top__links p{
+    width: calc(100% / 3);
+    color: var(--grey);
+    cursor: pointer;
+}
+footer .footer_top .footer_top__app{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+footer .footer_top .footer_top__app h3{
+    align-self: end;
+    color: var(--black);
+    font-size: 0.9rem;
+}
+footer .footer_top .footer_top__images{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 17rem;
+}
+footer .footer_top .footer_top__app .footer_top__images img{
+    width: 8rem;
+    height: 100%;
+}
+footer .footer_buttom{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+footer .footer_buttom .footer_buttom__text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer .footer_buttom .footer_buttom__text p{
+    color: var(--grey);
+}
+footer .footer_buttom .footer_buttom__icon{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.8rem;
+}
+footer .footer_buttom .footer_buttom__icon svg{
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 6.90162px 17.254px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 0.8rem;
+    color: var(--grey);
+}
+footer .footer_buttom .footer_buttom__icon svg:hover{
+    background: var(--black);
+    color: var(--white);
+}
+/*=========== $$$$$$$$$$$$$ End Footer   $$$$$$$$$$$$$$ ==========*/
+@media (max-width : 1440px) {
+    .formatform form{
+        gap: 2rem;
+    }
+}
+@media (max-width: 1250px) {
+    .container{
+        padding: 1rem 6rem;
+    }
+    footer{
+        padding: 2rem 6rem;
+    }
+}
+@media (min-width: 1550px) {
+    .container{
+        padding: 1rem 15rem;
+    }
+    footer{
+        padding: 2rem 15rem;
+    }
+}
+@media (max-width: 1100px) {
+    .container{
+        padding: 1rem 2rem;
+    }
+    .po-f{
+        padding-right: 0px;
+    }
+}
+@media (max-width: 769px) {
+    .container{
+        padding: 1rem;
+    }
+}
+@media (max-width : 1024px) {
+    .aiport_menu{
+        width: 17rem;
+    }
+    .airport_maincart{
+        display: flex;
+        justify-content: center;
+    }
+    .airport_cart {
+        width: 100%;
+    }
+    .airport_maincart .airport_cart__image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .airport_maincart .airport_cart__image img{
+        width: 80%;
+        height: 100%;
+    }
+    footer .footer_top{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    footer .footer_top .footer_top__links{
+        width: 100%;
+    }
+    footer .footer_top .footer_top__app h3{
+        align-self: center;
+    }
+    footer .footer_buttom{
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+    footer .footer_buttom .footer_buttom__text{
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .airport_menu{
+        width: 28rem;
+        min-height: 30rem;
+    }
+    .dailyrent_menu{
+        width: 90%;
+    }
+    footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 0rem 0rem;
+    height: 6rem;
+    background: rgb(31, 41, 51);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    z-index: 100;
+    }
+    footer a{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        color: var(--white);
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    footer .active{
+        color: var(--green);
+    }
+    footer a p{
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+    .profile{
+        height: 30rem;
+        box-shadow: none;
+    }
+    .profile > h2{
+        display: none;
+    }
+    .profile .profile_content{
+        flex-direction: column;
+    }
+    .profile .profile_content aside{
+        width: 100%;
+        border-right: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .profile .profile_content aside button{
+        display: flex;
+        justify-content: center;
+    }
+    .profile .profile_content aside .profile_content__btn .br-left--active{
+        display: none;
+    }
+    .profile .profile_content section{
+        width: 100%;
+        padding: 0rem;
+    }
+    .profile > button{
+        background: var(--green);
+        border-radius: 3rem;
+        padding: 0.8rem 0rem;
+        text-transform: capitalize;
+    }
+}
+@media (max-width: 500px) {
+    .airport_menu{
+        width: 24rem;
+        padding: 1rem;
+    }
+    .airport_menu > svg{
+        padding: 0.5rem;
+    }
+    .airport_content button {
+    gap: 1rem;
+    }
+}
+@media (max-width: 425px) {
+    .airport_menu{
+        width: 20rem;
+    }
+    .airport_menu__icon h2{
+        font-size: 1rem;
+    }
+    .dailyrent_menu .dailyrent_menu__boxs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dailyrent_menu .dailyrent_menu__boxs .dailyrent_menu__box{
+        width: 100%;
+    }
+    .dailyrent_menu .dailyrent_menu__icon{
+        gap: 2rem;
+    }
+    .dailyrent_menu__icon > h2{
+        font-size: 1rem;
+    }
+    .profile{
+        padding: 4rem 0.5rem;
+    }
+}
+@media (max-width: 375px) {
+    .airport_menu{
+        width: 17rem;
+    }
+}

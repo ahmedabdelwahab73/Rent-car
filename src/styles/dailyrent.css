@@ -1,0 +1,134 @@
+/* .banner_dailyrent{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 20rem;
+    z-index: 111000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner_dailyrent .banner_dailyrent__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0000004d;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.dailyrent_menu{
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem;
+    position: relative;
+    gap: 1.5rem;
+    background: #fafbfc;
+    border-radius: 1.3rem;
+}
+.dailyrent_menu > svg{
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    background: var(--white);
+    padding: 0.8rem;
+    border-radius: 50%;
+    box-shadow: rgba(15, 15, 15, 0.2) 0px 8px 16px -8px;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--grey);
+}
+.dailyrent_menu .dailyrent_menu__icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 3rem;
+    align-items: center;
+    padding: 1.5rem 0rem;
+    border-bottom: 2px solid var(--border-color);
+}
+.dailyrent_menu .dailyrent_menu__icon svg{
+    color: var(--green);
+    border: 2px solid var(--border-color);
+    padding: 0.6rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dailyrent_menu .dailyrent_menu__boxs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+}
+.dailyrent_menu .dailyrent_menu__boxs .dailyrent_menu__box{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: rgba(24, 39, 75, 0.04) 0px 6px 14px -6px;
+    background: var(--white);
+    border-radius: 1rem;
+    width: 50%;
+}
+.dailyrent_menu .dailyrent_menu__boxs .dailyrent_menu__box img{
+    width: 5rem;
+}
+.dailyrent_menu .dailyrent_menu__boxs .dailyrent_menu__box .menu_box__text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.dailyrent_menu .dailyrent_menu__boxs .dailyrent_menu__box .menu_box__text p{
+    font-weight: bolder;
+}
+.dailyrent_menu .dailyrent_menu__boxs .dailyrent_menu__box .menu_box__text span{
+    display: block;
+    color: var(--grey);
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
+.map{
+    position: relative;
+}
+.map .map_btn{
+    position: absolute;
+    width: 10rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: var(--green);
+    outline: none;
+    border-radius: 1.5rem;
+    border: none;
+    color: var(--white);
+    padding: 0.6rem 0rem;
+    transition: background 0.3s linear;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    z-index: 1000;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.leaflet-marker-icon {
+    transition: transform 0.3s ease-in-out;
+}
+.your-map-class{
+    height: 100% !important;
+}
+.leaflet-container{
+    width: 100vh !important;
+    height: 60vh !important;
+}
+.marker-enter {
+    transform: translate3d(0, 0, 0) !important;
+    transition: transform 1s ease-in-out; 
+} */
