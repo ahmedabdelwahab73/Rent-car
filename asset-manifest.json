@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d9c2819e.css",
+    "main.js": "/static/js/main.29e7c5fb.js",
+    "static/js/787.b69c2407.chunk.js": "/static/js/787.b69c2407.chunk.js",
+    "static/media/sliderLocation-1.webp": "/static/media/sliderLocation-1.3f2e07033f4d3fdfc689.webp",
+    "static/media/sliderLocation-2.webp": "/static/media/sliderLocation-2.ee7d63d84ed2a657c2c8.webp",
+    "static/media/sliderLocation-3.webp": "/static/media/sliderLocation-3.71cb7f160561110126a8.webp",
+    "static/media/slider-3.webp": "/static/media/slider-3.13a8bc8e91458db29f98.webp",
+    "static/media/sliderLocation-5.webp": "/static/media/sliderLocation-5.13a8bc8e91458db29f98.webp",
+    "static/media/sliderLocation-4.webp": "/static/media/sliderLocation-4.3360746173662333407b.webp",
+    "static/media/slider-2.webp": "/static/media/slider-2.34a8aef014f2599a120a.webp",
+    "static/media/slider-4.webp": "/static/media/slider-4.34a8aef014f2599a120a.webp",
+    "static/media/sliderLocation-6.webp": "/static/media/sliderLocation-6.71313603e8ca97f1c434.webp",
+    "static/media/slider-1.webp": "/static/media/slider-1.7a816cbab7b7320206f8.webp",
+    "static/media/markmap.png": "/static/media/markmap.d0e89e6d2583ac0fb561.png",
+    "static/media/apprent.webp": "/static/media/apprent.6829a761f74ea4707d45.webp",
+    "static/media/apple-app-store-logo-removebg-preview.webp": "/static/media/apple-app-store-logo-removebg-preview.8f02ef9112b792f1a0a9.webp",
+    "static/media/carthead.webp": "/static/media/carthead.fccc74b806ef1a352518.webp",
+    "static/media/footericon.webp": "/static/media/footericon.2bac98d32db0f6c076f9.webp",
+    "static/media/sliderLocation-7.webp": "/static/media/sliderLocation-7.049a90b7ddb5dabeb218.webp",
+    "static/media/google-play-badge.webp": "/static/media/google-play-badge.7f87ad9e0227d559f7b7.webp",
+    "static/media/banner-1.webp": "/static/media/banner-1.ce52cc1adf3e22713235.webp",
+    "static/media/banner-2.webp": "/static/media/banner-2.19e97adb77cd0d6988e5.webp",
+    "static/media/deliviry.webp": "/static/media/deliviry.a709a8880938930287d0.webp",
+    "static/media/banner-3.webp": "/static/media/banner-3.0e3c953d2ba8bc2bf81b.webp",
+    "index.html": "/index.html",
+    "main.d9c2819e.css.map": "/static/css/main.d9c2819e.css.map",
+    "main.29e7c5fb.js.map": "/static/js/main.29e7c5fb.js.map",
+    "787.b69c2407.chunk.js.map": "/static/js/787.b69c2407.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9c2819e.css",
+    "static/js/main.29e7c5fb.js"
+  ]
+}
